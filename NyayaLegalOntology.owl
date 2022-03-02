@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/NyOnLegalOntology#"
+     xml:base="https://w3id.org/def/NyOnLegalOntology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:vd="https://w3id.org/def/ViralDiseasesAndDrugs#"
+     xmlns:bot="https://w3id.org/bot#"
+     xmlns:dbr="http://dbpedia.org/resource/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:d4covid="https://w3id.org/def/DRUGS4COVID19#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+
+
+    <owl:Ontology rdf:about="https://w3id.org/def/NyayaLegalOntology">
+        <dcterms:creator>Sarika Jain</dcterms:creator>
+        <dcterms:creator>Pooja Harde</dcterms:creator>
+        <dcterms:creator>Nandana Mihindukulasooriya</dcterms:creator>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/NyayaLegalOntology#"/>
+        <vann:preferredNamespacePrefix>nyon</vann:preferredNamespacePrefix>
+        <terms:created xml:lang="es">2020-04-04</terms:created>
+        <terms:modified xml:lang="es">2020-07-16</terms:modified>
+        <dcterms:description xml:lang="en">An ontology that represents concepts in the legal domain</dcterms:description>
+        <dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <dcterms:title xml:lang="en">Nyaya Kshetra: A Multilingual Legal Ontology for Judicial System</dcterms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <dc:publisher rdf:resource="http://website/"/>
+    </owl:Ontology>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+
+    <!-- http://purl.org/dc/terms/created -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+
+    <!-- http://purl.org/dc/terms/creator -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+
+    <!-- http://purl.org/dc/terms/license -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Accussed">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/NyayaLegalOntology#NonLegal_Participants"/>
+        <rdfs:comment xml:lang="en">Accussed</rdfs:comment>
+        <rdfs:label xml:lang="en">Accussed</rdfs:label>
+        <rdfs:label xml:lang="es">Accussed</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Acts">
+        <rdfs:comment xml:lang="en">Acts</rdfs:comment>
+        <rdfs:label xml:lang="en">Acts</rdfs:label>
+        <rdfs:label xml:lang="es">Acts</rdfs:label>
+    </owl:Class>    
+
+    <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Advisory_Jurisdiction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/NyayaLegalOntology#Jurisdiction"/>
+        <rdfs:comment xml:lang="en">Advisory_Jurisdiction</rdfs:comment>
+        <rdfs:label xml:lang="en">Advisory_Jurisdiction</rdfs:label>
+        <rdfs:label xml:lang="es">Advisory_Jurisdiction</rdfs:label>
+    </owl:Class>    
+
+    <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Apex_Court">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/NyayaLegalOntology#Courts"/>   
+        <rdfs:comment xml:lang="en">Apex_Court</rdfs:comment>
+        <rdfs:label xml:lang="en">Apex_Court</rdfs:label>
+        <rdfs:label xml:lang="es">Apex_Court</rdfs:label>
+    </owl:Class>    
+
+       <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Appeal">
+        <rdfs:comment xml:lang="en">Appeal</rdfs:comment>
+        <rdfs:label xml:lang="en">Appeal</rdfs:label>
+        <rdfs:label xml:lang="es">Appeal</rdfs:label>
+    </owl:Class>    
+
+       <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Appellant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/NyayaLegalOntology#NonLegal_Participants"/>
+        <rdfs:comment xml:lang="en">Appellant</rdfs:comment>
+        <rdfs:label xml:lang="en">Appellant</rdfs:label>
+        <rdfs:label xml:lang="es">Appellant</rdfs:label>
+    </owl:Class>    
+
+     <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Appellant_Jurisdiction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/NyayaLegalOntology#Jurisdiction"/>        
+        <rdfs:comment xml:lang="en">Appellant_Jurisdiction</rdfs:comment>
+        <rdfs:label xml:lang="en">Appellant_Jurisdiction</rdfs:label>
+        <rdfs:label xml:lang="es">Appellant_Jurisdiction</rdfs:label>
+    </owl:Class>    
+
+     <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Author">
+        <rdfs:comment xml:lang="en">Author</rdfs:comment>
+        <rdfs:label xml:lang="en">Author</rdfs:label>
+        <rdfs:label xml:lang="es">Author</rdfs:label>
+    </owl:Class>    
+
+     <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Bench">
+        <rdfs:comment xml:lang="en">Bench</rdfs:comment>
+        <rdfs:label xml:lang="en">Bench</rdfs:label>
+        <rdfs:label xml:lang="es">Bench</rdfs:label>
+    </owl:Class>    
+
+     <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Case">
+        <rdfs:comment xml:lang="en">Case</rdfs:comment>
+        <rdfs:label xml:lang="en">Case</rdfs:label>
+        <rdfs:label xml:lang="es">Case</rdfs:label>
+    </owl:Class>    
+
+       <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Case_Type">
+        <rdfs:comment xml:lang="en">Case_Type</rdfs:comment>
+        <rdfs:label xml:lang="en">Case_Type</rdfs:label>
+        <rdfs:label xml:lang="es">Case_Type</rdfs:label>
+    </owl:Class>    
+
+   <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#NonLegal_Participants">
+        <rdfs:comment xml:lang="en">NonLegal_Participants</rdfs:comment>
+        <rdfs:label xml:lang="en">NonLegal_Participants</rdfs:label>
+        <rdfs:label xml:lang="es">NonLegal_Participants</rdfs:label>
+    </owl:Class> 
+
+       <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Jurisdiction">
+        <rdfs:comment xml:lang="en">Jurisdiction</rdfs:comment>
+        <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
+        <rdfs:label xml:lang="es">Jurisdiction</rdfs:label>
+    </owl:Class>    
+
+
+   <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Courts">
+        <rdfs:comment xml:lang="en">Courts</rdfs:comment>
+        <rdfs:label xml:lang="en">Courts</rdfs:label>
+        <rdfs:label xml:lang="es">Courts</rdfs:label>
+    </owl:Class>    
+
+
+   <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Documents">
+        <rdfs:comment xml:lang="en">Documents</rdfs:comment>
+        <rdfs:label xml:lang="en">Documents</rdfs:label>
+        <rdfs:label xml:lang="es">Documents</rdfs:label>
+    </owl:Class>    
+
+
+   <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Chief_Meterpolitan_Court">
+        <rdfs:comment xml:lang="en">Chief_Meterpolitan_Court</rdfs:comment>
+        <rdfs:label xml:lang="en">Chief_Meterpolitan_Court</rdfs:label>
+        <rdfs:label xml:lang="es">Chief_Meterpolitan_Court</rdfs:label>
+    </owl:Class>    
+
+
+   <owl:Class rdf:about="https://w3id.org/def/NyayaLegalOntology#Courts_for_Criminal">
+        <rdfs:comment xml:lang="en">Courts_for_Criminal</rdfs:comment>
+        <rdfs:label xml:lang="en">Courts_for_Criminal</rdfs:label>
+        <rdfs:label xml:lang="es">Courts_for_Criminal</rdfs:label>
+    </owl:Class> 
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+     <!-- https://w3id.org/def/DRUGS4COVID19#causedByDrug -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/NyayaLegalOntology#caseBelongsToType">
+        <rdfs:domain rdf:resource="https://w3id.org/def/NyayaLegalOntology#Case"/>
+        <rdfs:comment xml:lang="en">Case belongs to type</rdfs:comment>
+        <rdfs:label xml:lang="es">Case belongs to type</rdfs:label>
+        <rdfs:label xml:lang="en">Case belongs to type</rdfs:label>
+    </owl:ObjectProperty> 
+
+     <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     --> 
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/NyayaLegalOntology#hasCaseName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/NyayaLegalOntology#Case"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>case name</rdfs:comment>
+        <rdfs:label xml:lang="es">case name</rdfs:label>
+        <rdfs:label xml:lang="en">case name</rdfs:label>
+    </owl:DatatypeProperty>             
+ 
+
+</rdf:RDF>
